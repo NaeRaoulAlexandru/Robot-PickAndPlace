@@ -1,2 +1,2 @@
 >[!NOTE]
->Folderul contine motion studies pentru diferite componente si capturi de ecran cu progresul robotului.
+>Folderul contine capturi de ecran cu progresul robotului.
