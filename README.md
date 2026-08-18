@@ -60,10 +60,10 @@ In aceasta etapa a trebuit sa export robotul cu ajutorul URDF pentru a putea sa 
 
 ## Etapa 4 - Miscarile in RViz
 
-- [ ] Pregatirea masinii virtuale si a mediului de simulare.
-- [ ] Importarea configuratiei URDF.
-- [ ] Miscarile de test pe jointuri.
-- [ ] Rezultatele au fost multumitoare.
+- [x] Pregatirea masinii virtuale si a mediului de simulare.
+- [x] Importarea configuratiei URDF.
+- [x] Miscarile de test pe jointuri.
+- [x] Rezultatele au fost multumitoare.
 
 ## Concluzii
 
