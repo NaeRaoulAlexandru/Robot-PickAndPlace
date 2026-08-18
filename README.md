@@ -1,6 +1,7 @@
 # Robot-PickAndPlace
 Conceperea unui robot si vizualizarea in mediul de simulare ROS2.
 
+```text
 Robot-PickAndPlace/
 ├── AnsambluFINAL/                   # Fișierele CAD sursă din SolidWorks
 ├── README.md
@@ -30,6 +31,7 @@ Robot-PickAndPlace/
     │       ├── robot.csv
     │       └── robot.urdf
     └── README.md
+```
 
 ## Etapa 1 - Stabilirea unui mecanism/robot.
 
