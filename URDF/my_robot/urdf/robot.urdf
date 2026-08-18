@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="robot">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0527725903941101 -0.00619187314083834 -0.0200240277598498"
+        rpy="0 0 0" />
+      <mass
+        value="40.9345824980592" />
+      <inertia
+        ixx="1.7640119105002"
+        ixy="-0.000104187126169531"
+        ixz="-0.003283313301697"
+        iyy="2.07629695645124"
+        iyz="1.26285924198473E-07"
+        izz="3.80002048467497" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="rotate">
+    <inertial>
+      <origin
+        xyz="-3.39551997630139E-12 9.97666263062971E-10 0.282475504243986"
+        rpy="0 0 0" />
+      <mass
+        value="1.96223877143219" />
+      <inertia
+        ixx="0.0256744507808563"
+        ixy="-2.9313212957348E-20"
+        ixz="3.64236139201003E-19"
+        iyy="0.0256744507808563"
+        iyz="4.89441723929933E-20"
+        izz="0.00602893621372457" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot/meshes/rotate.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.894117647058823 0.894117647058823 0.894117647058823 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot/meshes/rotate.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rotate_joint"
+    type="continuous">
+    <origin
+      xyz="0.324999999989974 0 0.15"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rotate" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="shoulder">
+    <inertial>
+      <origin
+        xyz="0.129347703964306 0.00454706084897445 -0.0606302942226279"
+        rpy="0 0 0" />
+      <mass
+        value="9.61871806844196" />
+      <inertia
+        ixx="0.0378238203295257"
+        ixy="-0.00576140857106586"
+        ixz="-0.00254424029941009"
+        iyy="0.201467312075318"
+        iyz="-7.60873116583981E-05"
+        izz="0.214078058410395" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot/meshes/shoulder.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.894117647058823 0.894117647058823 0.894117647058823 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot/meshes/shoulder.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="shoulder_translation"
+    type="prismatic">
+    <origin
+      xyz="0 0 0.44492"
+      rpy="0 0 0" />
+    <parent
+      link="rotate" />
+    <child
+      link="shoulder" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-0.12"
+      upper="0.32"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="arm">
+    <inertial>
+      <origin
+        xyz="0.206955232249304 0.178443310379946 0.00130444447471834"
+        rpy="0 0 0" />
+      <mass
+        value="2.39058427817033" />
+      <inertia
+        ixx="0.0294407632819301"
+        ixy="-0.0290438953849632"
+        ixz="-0.00320069202319632"
+        iyy="0.0378971597164548"
+        iyz="-0.00277158670585175"
+        izz="0.064095486732772" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot/meshes/arm.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.894117647058823 0.894117647058823 0.894117647058823 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot/meshes/arm.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="arm_joint"
+    type="revolute">
+    <origin
+      xyz="0.349781858369002 0.0123552526233601 0.0100000000000242"
+      rpy="0 0 0" />
+    <parent
+      link="shoulder" />
+    <child
+      link="arm" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-0.21"
+      upper="1.5"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="EOF1">
+    <inertial>
+      <origin
+        xyz="-0.00750000002508056 -0.203646453189227 0.0899943402748454"
+        rpy="0 0 0" />
+      <mass
+        value="0.657977347763493" />
+      <inertia
+        ixx="0.0116540396231617"
+        ixy="-2.97962993407756E-13"
+        ixz="1.13331219409041E-13"
+        iyy="0.00144250962879155"
+        iyz="0.00351539219387846"
+        izz="0.0103169512542981" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot/meshes/EOF1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.894117647058823 0.894117647058823 0.894117647058823 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot/meshes/EOF1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="EOF1_joint"
+    type="revolute">
+    <origin
+      xyz="0.4056 0.30836 0.047"
+      rpy="1.5708 0 0.71288" />
+    <parent
+      link="arm" />
+    <child
+      link="EOF1" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0.018"
+      upper="0.32"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="EOF2">
+    <inertial>
+      <origin
+        xyz="-0.00750000000668039 -0.210303043593832 -0.0730991724529134"
+        rpy="0 0 0" />
+      <mass
+        value="0.657977347763493" />
+      <inertia
+        ixx="0.0116540396231617"
+        ixy="2.32915064577579E-13"
+        ixz="6.99262696357561E-14"
+        iyy="0.000930389716236987"
+        iyz="-0.00274789686901122"
+        izz="0.0108290711668527" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot/meshes/EOF2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.894117647058823 0.894117647058823 0.894117647058823 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot/meshes/EOF2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="EOF2_joint"
+    type="revolute">
+    <origin
+      xyz="0.37028 0.34921 0.047"
+      rpy="1.5708 0 0.71288" />
+    <parent
+      link="arm" />
+    <child
+      link="EOF2" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-0.32"
+      upper="-0.018"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="EOF1_joint"
+      multiplier="1"
+      offset="0" />
+  </joint>
+</robot>
