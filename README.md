@@ -1,6 +1,36 @@
 # Robot-PickAndPlace
 Conceperea unui robot si vizualizarea in mediul de simulare ROS2.
 
+Robot-PickAndPlace/
+├── AnsambluFINAL/                   # Fișierele CAD sursă din SolidWorks
+├── README.md
+├── Screenshoots/
+│   ├── Componente.png
+│   ├── demo_final.mp4
+│   ├── Desen ansamblu.png
+│   ├── Poza1.PNG
+│   ├── Poza2.PNG
+│   ├── README.md
+│   ├── Test1 WEB.png
+│   └── URDF_setari_coordonate.png
+└── URDF/
+    ├── my_robot/
+    │   ├── CMakeLists.txt
+    │   ├── launch/
+    │   │   └── display.launch.py
+    │   ├── meshes/
+    │   │   ├── arm.STL
+    │   │   ├── base_link.STL
+    │   │   ├── EOF1.STL
+    │   │   ├── EOF2.STL
+    │   │   ├── rotate.STL
+    │   │   └── shoulder.STL
+    │   ├── package.xml
+    │   └── urdf/
+    │       ├── robot.csv
+    │       └── robot.urdf
+    └── README.md
+
 ## Etapa 1 - Stabilirea unui mecanism/robot.
 
   Am ales sa realizez un brat robotic cu 3 grade de libertate atasat unei platforme mobile ce are ca scop mutarea si transportarea obiectelor in diferite locuri. Acest tip de robot poate fi utilizat in spitale pentru transportul medicamentelor dintr-o camera in alta.
