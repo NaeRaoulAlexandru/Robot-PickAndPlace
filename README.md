@@ -81,7 +81,7 @@ In aceasta etapa a trebuit sa export robotul cu ajutorul URDF pentru a putea sa 
 5. Am definit jointurile si linkurile pentru un primul test.
 
 >[!IMPORTANT]
-> Pentru primul test am ales sa folosesc platforma web pentru usurinta. Link: [https://discourse.openrobotics.org/t/web-based-urdf-visualization-tool-and-library-opensourced-from-nasa-jpl/14404]. Vezi folderul de Screenshots pentru a vedea.
+> Pentru primul test am ales sa folosesc platforma web pentru usurinta. Link: [https://discourse.openrobotics.org/t/web-based-urdf-visualization-tool-and-library-opensourced-from-nasa-jpl/14404]. Vezi folderul de Screenshots.
 
 6. Definirea limitelor.
 
